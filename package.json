@@ -1,0 +1,13 @@
+{
+  "name": "thf-repositories-migration",
+  "version": "1.0.0",
+  "description": "THF Repositories Migration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "keywords": "node generator/index",
+    "migrate": "node migration/index"
+  },
+  "author": "",
+  "license": "ISC"
+}
