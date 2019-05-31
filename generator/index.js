@@ -75,9 +75,11 @@ function removeKeyWordsJson() {
 }
 
 function generateKeyWordsJson() {
-  const thfPath = '../../thf';
-  const codeEditorPath = '../../thf-code-editor';
-  const cdnCssPath = '../../cdn-thf-core/src/css';
+  const relativePath = getRelativePath();
+
+  const thfPath = relativePath + 'thf';
+  const codeEditorPath = relativePath + 'thf-code-editor';
+  const cdnCssPath = relativePath + 'cdn-thf-core/src/css';
 
   removeKeyWordsJson();
 
@@ -86,4 +88,14 @@ function generateKeyWordsJson() {
   getKeyWordsFromDirectory(cdnCssPath);
 
   fileReader.createFileKeyWordsFinal();
+}
+
+function getRelativePath() {
+  // Windows
+  if (process.platform === 'win32') {
+    return '../../';
+  } else {
+    // Linux and MacOS (darwin)
+    return '../';
+  }
 }
