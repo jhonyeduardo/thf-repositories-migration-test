@@ -1,9 +1,6 @@
 const fileSystem = require('fs');
 const path = require('path');
 const fileReader = require('./replace.js');
-const cliProgress = require('cli-progress');
-
-const bar = new cliProgress.Bar({}, cliProgress.Presets.shades_classic);
 
 convertThfRepositories();
 
