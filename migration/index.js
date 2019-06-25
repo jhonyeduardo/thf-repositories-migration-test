@@ -64,16 +64,16 @@ function renameFiles(dir, from, to) {
 
 function convertThfRepositories() {
   const thfPath = '../thf';
-  const codeEditorPath = '../thf-code-editor';
+  // const codeEditorPath = '../thf-code-editor';
   const cdnCssPath = '../cdn-thf-core';
   const tslintPath = '../thf-tslint';
-  const portalPath = '../thf-portal';
+  // const portalPath = '../thf-portal';
 
   convertRepository(thfPath);
-  convertRepository(codeEditorPath);
+  // convertRepository(codeEditorPath);
   convertRepository(cdnCssPath);
   convertRepository(tslintPath);
-  convertRepository(portalPath);
+  // convertRepository(portalPath);
 }
 
 function convertRepository(directory) {

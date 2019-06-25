@@ -78,13 +78,11 @@ function generateKeyWordsJson() {
   const relativePath = getRelativePath();
 
   const thfPath = relativePath + 'thf';
-  const codeEditorPath = relativePath + 'thf-code-editor';
   const cdnCssPath = relativePath + 'cdn-thf-core/src/css';
 
   removeKeyWordsJson();
 
   getKeyWordsFromDirectory(thfPath);
-  getKeyWordsFromDirectory(codeEditorPath);
   getKeyWordsFromDirectory(cdnCssPath);
 
   fileReader.createFileKeyWordsFinal();

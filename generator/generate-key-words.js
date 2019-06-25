@@ -3,12 +3,13 @@ const fileNameJson = 'keyWords.json';
 
 // Palavras reservadas no THF que já são fixas
 const wordsThfFixed = {
-  'thf-ui': 'po-ui',
-  'thf-theme/': 'po-theme/',
-  'thf-theme-default': 'po-theme-default',
-  'thf-code-editor': 'po-code-editor',
-  'thf-templates': 'po-templates',
-  'thf-storage': 'po-storage',
+  'thf-ui': 'portinari-ui',
+  'thf-theme/': 'style/',
+  'thf-theme-default': 'portinari-theme-default',
+  'thf-code-editor': 'portinari-code-editor',
+  'thf-templates': 'portinari-templates',
+  'thf-storage': 'portinari-storage',
+  'thf-sync': 'portinari-sync',
   '@totvs': '@portinari',
 }
 
