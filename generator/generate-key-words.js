@@ -11,6 +11,9 @@ const wordsThfFixed = {
   'thf-storage': 'portinari-storage',
   'thf-sync': 'portinari-sync',
   '@totvs': '@portinari',
+  'X-Totvs-Screen-Lock': 'X-Portinari-Screen-Lock',
+  'X-Totvs-No-Count-Pending-Requests': 'X-Portinari-No-Count-Pending-Requests',
+  'X-Totvs-No-Error': 'X-Portinari-No-Error'
 }
 
 function getFile(fileName) {
